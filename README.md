@@ -1,9 +1,9 @@
-# Debian Jessie (8) Ansible Test Image
+# Debian Stretch (9) Ansible Test Image
 
-[![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-debian.svg?branch=jessie)](https://travis-ci.org/yawpitch/docker-ansible-debian/branches)
-[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-debian-jessie.svg?maxAge=2592000)](https://hub.docker.com/r/yawpitch/docker-ansible-debian-wheezy/)
+[![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-debian.svg?branch=stretch)](https://travis-ci.org/yawpitch/docker-ansible-debian/branches)
+[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-debian-stretch.svg?maxAge=2592000)](https://hub.docker.com/r/yawpitch/docker-ansible-debian-wheezy/)
 
-Dockerized Debian Jessie (8) for Ansible playbook and role tests.
+Dockerized Debian Stretch (9) for Ansible playbook and role tests.
 
 ## For Ansible Testing Only 
 
@@ -18,7 +18,7 @@ First, [Install Docker](https://docs.docker.com/engine/installation/), then choo
 Any time a commit is merged to the `master` branch of this repo, **or** any time there is a rebuild of the upstream OS container, an Automatic Build will occur on Docker Hub. You can use this be *pulling* the image to your local machine:
 
 ```sh
-sudo docker pull yawpitch/docker-ansible-debian-jessie:latest
+sudo docker pull yawpitch/docker-ansible-debian-stretch:latest
 ```
 
 For convenience, a `make pull` target has been provided to do this for you. You can also both pull & verify the current Docker Hub image with the following command:
@@ -34,7 +34,7 @@ This will ensure that a container launched with from the image at minimum contai
 If you wish to build the image on your local machine, `git clone` this repo, `cd` into the repo, and then run:
 
 ```sh
-sudo docker build -t docker-ansible-debian-jessie .
+sudo docker build -t docker-ansible-debian-stretch .
 ```
 
 For convenience, a `make build` target has been provided to do this for you. You can also both build & verify a local image of the current repo with the following command:

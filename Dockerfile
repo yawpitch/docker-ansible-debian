@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 LABEL maintainer="Michael Morehouse (yawpitch)"
 
 ENV DEBIAN_FRONTEND noninteractive
