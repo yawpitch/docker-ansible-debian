@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 LABEL maintainer="Michael Morehouse (yawpitch)"
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -15,7 +15,7 @@ RUN apt-get update \
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        build-essential libffi-dev libssl-dev python-pip python-dev \
-       zlib1g-dev libncurses5-dev systemd python-setuptools \
+       zlib1g-dev libncurses5-dev systemd python-setuptools python-wheel \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
