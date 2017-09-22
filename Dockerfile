@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:jessie
 LABEL maintainer="Michael Morehouse (yawpitch)"
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -21,7 +21,7 @@ RUN apt-get update \
     && apt-get clean
 
 # Install Ansible via pip
-RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 ansible
+RUN pip install ansible
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible && echo "[local]\nlocalhost" > /etc/ansible/hosts
