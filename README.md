@@ -1,7 +1,7 @@
 # Debian Stretch (9) Ansible Test Image
 
 [![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-debian.svg?branch=stretch)](https://travis-ci.org/yawpitch/docker-ansible-debian/branches)
-[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-debian-stretch.svg?maxAge=2592000)](https://hub.docker.com/r/yawpitch/docker-ansible-debian-wheezy/)
+[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-debian-stretch.svg?maxAge=2592000)](https://hub.docker.com/r/yawpitch/docker-ansible-debian-stretch/)
 
 Dockerized Debian Stretch (9) for Ansible playbook and role tests.
 
