@@ -24,7 +24,7 @@ RUN apt-get update \
 RUN pip install ansible
 
 # Install Ansible inventory file.
-RUN mkdir -p /etc/ansible && echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+COPY hosts /etc/ansible/hosts
 
 # Restore initctl.
 COPY initctl_faker .
